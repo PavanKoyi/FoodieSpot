@@ -1,0 +1,30 @@
+.login-block {
+    position: absolute;
+    height: 50vh;
+    width: 20vw;
+    top: 20vh;
+    right: 40vw;
+    background-color: #ada8c391;
+    border-radius: 5%;
+}
+
+input {
+    width: 50%;
+}
+
+.login-form {
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+
+.container {
+    position: relative;
+    left: 0%;
+}
+
+.row {
+    position: relative;
+    width: 90%;
+    left: 0;
+}

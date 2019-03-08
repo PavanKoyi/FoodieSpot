@@ -1,0 +1,26 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 10px;
+    box-shadow: 0px 5PX lightgray;
+    background-color: aliceblue;
+}
+
+.title {
+    position: absolute;
+    left: 25%;
+    font-family: fantasy;
+    /* box-shadow: 6px 6px lightgray; */
+    font-size: 4vh;
+}
+
+.log {
+    position: absolute;
+    float: right;
+    bottom: 20%;
+    right: 10%;
+}
