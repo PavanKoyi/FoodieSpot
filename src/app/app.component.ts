@@ -10,7 +10,10 @@ export class AppComponent implements OnInit {
   title = 'foodie-spot';
 
   constructor(private router: Router) {}
-  ngOnInit() {
+  ngOnInit() { }
+
+  onLogin() {
     this.router.navigateByUrl('login');
   }
+
 }

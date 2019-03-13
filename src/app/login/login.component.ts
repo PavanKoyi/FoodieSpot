@@ -10,10 +10,9 @@ import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/fo
 export class LoginComponent implements OnInit {
 
   constructor(private router: Router) { }
-  SAMPLE: Number;
-   a = 20;
 
   loginForm: FormGroup;
+  selected = 'option2';
 
   ngOnInit() { 
     this.loginForm = new FormGroup ({
@@ -28,8 +27,7 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
     console.log(this.loginForm.value);
-    this.SAMPLE = 20;
-    console.log(this)
+    this.router.navigateByUrl('admin');
   }
 
 }

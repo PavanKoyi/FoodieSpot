@@ -1,12 +1,13 @@
 .login-block {
     position: absolute;
-    height: 50vh;
-    width: 20vw;
+    height: 40vh;
+    width: 25vw;
     top: 20vh;
     right: 40vw;
     background-color: #ada8c391;
     border-radius: 5%;
 }
+
 
 input {
     width: 50%;
@@ -19,6 +20,7 @@ input {
 }
 
 .container {
+    margin-top: 10%;
     position: relative;
     left: 0%;
 }
@@ -27,4 +29,9 @@ input {
     position: relative;
     width: 90%;
     left: 0;
+}
+
+#roleSelector {
+    position: relative;
+    width: 40%;
 }

@@ -1,3 +1,57 @@
 <div class="signup-block">
+    <div class="signup-form">
+        <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label for="FullName">FullName</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter FullName"
+                        formControlName="fullName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter email"
+                        formControlName="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="inputPhn" placeholder="Enter PhoneNo."
+                        formControlName="phone">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password"
+                        formControlName="password">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group" formGroupName="address">
+                    <label for="inputStreet">Street</label>
+                    <input type="text" class="form-control" id="inputStreet" placeholder="Street"
+                        formControlName="street">
+                </div>
+                <div class="form-group" formGroupName="address">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="City" formControlName="city">
+                </div>
+                <div class="form-group" formGroupName="address">
+                    <label for="inputCountry">Country</label>
+                    <input type="text" class="form-control" id="inputCountry" placeholder="Country"
+                        formControlName="country">
+                </div>
+            </div>
 
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid">SignUp</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-link" (click)="onLogin()">If Registered</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
 </div>
