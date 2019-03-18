@@ -7,5 +7,14 @@
         "phone": 9160011324,
         "role": "admin",
         "gender": "male"
+    },
+    {
+        "id": 2,
+        "name": "JanamVenkataSaiKiran",
+        "email": "sunny@gmail.com",
+        "password": "1215125313",
+        "phone": 7674813745,
+        "role": "admin",
+        "gender": "male"
     }
 ]

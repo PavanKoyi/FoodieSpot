@@ -1,0 +1,21 @@
+.add-restaurent {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 5%;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 2%;
+}
+
+.controls {
+    position: absolute;
+    left: 75%;
+    margin-top: 10%;
+}
+
+button {
+    margin: 10px;
+}

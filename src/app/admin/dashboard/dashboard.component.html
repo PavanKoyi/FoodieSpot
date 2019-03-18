@@ -1,3 +1,31 @@
-<p>
-  dashboard works!
-</p>
+<div class="admin-dashboard">
+  <div class="row">
+    <div class="column" id="adminMenu">
+      <div class="menu">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink='add-restaurant' routerLinkActive="active-link">AddRestaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='add-employee' routerLinkActive="active-link">AddEmployee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='add-food-category' routerLinkActive="active-link">AddFoodCategory</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="column" id="adminLists">
+      <div class="list-menu">
+        <label>Check list...</label>
+        <select class="form-control">
+          <option>Restaurants</option>
+          <option>Employees</option>
+          <option>Users/Consumers</option>
+          <option>RequestsAsRestaurants</option>
+        </select>
+      </div>
+    <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

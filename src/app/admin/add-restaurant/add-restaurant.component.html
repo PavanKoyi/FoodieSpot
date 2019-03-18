@@ -1,0 +1,47 @@
+<div class="add-restaurent">
+  <h1>Adding new restaurent ...</h1>
+  <form>
+    <div class="form-row">  
+      <div class="form-group col-md-6">
+        <label for="restaurantName">Restaura  nt Name</label>
+        <input type="text" class="form-control" id="restaurantName" placeholder="Restaurant name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="ownerName">Password</label>
+        <input type="text" class="form-control" id="ownerName" placeholder="Owner Name">
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="OwnerId">OwnerId</label>
+          <input type="number" class="form-control" id="ownerId" placeholder="OwnerId">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="phone">Phone</label>
+            <input type="tel" class="form-control" id="phoneNo" placeholder="Contact No.">      
+        </div>
+      </div>
+    <strong>Address:</strong>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="street">Street</label>
+        <input type="text" class="form-control" id="street" placeholder="Street">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="city">City</label>
+        <select id="city" class="form-control"> 
+          <option selected>Guntur</option>
+          <option>Nellore</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input pattern="[0-9]*" class="form-control" id="inputZip">
+      </div>
+    </div>
+    <div class="controls">
+        <button type="reset" class="btn btn-primary">Reset</button>
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+  </form>
+</div>  

@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, children: []},
   { path: 'login', component: LoginComponent, children: [] },    
   { path: 'signup', component: SignUpComponent, children: [] },
-  { path: 'admin', loadChildren: './admin/admin.module#AdminModule' }
+  { path: 'admin', loadChildren: './admin/admin.module#AdminModule'}
 ];
 
 @NgModule({
