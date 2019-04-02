@@ -1,0 +1,33 @@
+#userDashboard {
+    position: absolute;
+    background-color: transparent;
+    top: 11%;
+    left: 1vw;
+    height: 86vh;
+    width: 98vw;
+    box-shadow: 1px 1px 4px lightslategrey;
+    border-radius: 10px;
+}
+    
+    .tablist {
+        position: relative;
+    }
+
+.menu {
+    position: relative;
+    background-color: aliceblue;
+    height: 10%;
+    width: 100%;
+}
+
+.list-group-item {
+    position: relative;
+    margin: 3%;
+}
+
+#searchBar {
+    position: absolute;
+    right: 0%;
+    top: 20%;
+}
+

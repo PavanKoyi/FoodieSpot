@@ -4,13 +4,23 @@
     width: 25vw;
     top: 20vh;
     right: 40vw;
+    /* background-color: #ada8c391; */
+    border-radius: 5%;
+}
+
+form {
+    padding: 10%;
     background-color: #ada8c391;
     border-radius: 5%;
 }
 
 
 input {
-    width: 50%;
+    width: 80%;
+}
+
+.error-text {
+    color: red;
 }
 
 .login-form {

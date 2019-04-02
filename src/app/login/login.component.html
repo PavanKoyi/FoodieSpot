@@ -4,19 +4,21 @@
       <div class="form-group">
         <label for="email">Email address</label>
         <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" formControlName="username">
+        <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched" class="error-text">Invalid username</span>
       </div>
       <div class="form-group">
         <label for="inputPassword">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password"
-          formControlName="password">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" formControlName="password">
+        <span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched" class="error-text">Invalid password</span>
       </div>
+      <span *ngIf="isUnAuthorized" class="error-text"> Un Authorized credentoials...</span>
       <div class="container">
         <div class="row">
           <div class="col">
             <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
           </div>
           <div class="col">
-            <button class="btn btn-link" (click)="onSignup()">ToRegister</button>
+            <button class="btn btn-link" (click)="onSignup()">Signup Here</button>            
           </div>
         </div>
       </div>

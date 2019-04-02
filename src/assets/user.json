@@ -14,7 +14,7 @@
         "email": "sunny@gmail.com",
         "password": "1215125313",
         "phone": 7674813745,
-        "role": "admin",
+        "role": "user",
         "gender": "male"
     }
 ]

@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
   selected = 'option2';
+  public isUnAuthorized: boolean = false;
 
 
   ngOnInit() {
@@ -37,11 +38,12 @@ export class LoginComponent implements OnInit {
           if (user.email === this.loginForm.value.username && user.password === this.loginForm.value.password) {
             console.log('LoggedIn successfully..... as' + user.role);
             console.log(user);
-            this.router.navigateByUrl('admin');
+            this.router.navigateByUrl(user.role);
+          } else {
+              this.isUnAuthorized = true;
           }
         }
       });
-
     });
 
 

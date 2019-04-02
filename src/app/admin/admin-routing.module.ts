@@ -4,13 +4,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AddFoodCategoryComponent } from './add-food-category/add-food-category.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, children: [
     { path: 'add-restaurant', component: AddRestaurantComponent},
     { path: 'add-employee', component: AddEmployeeComponent},
-    { path: 'add-food-category', component: AddFoodCategoryComponent}
+    { path: 'add-food-category', component: AddFoodCategoryComponent},
+    { path: 'users', component: UserListComponent}
   ]},
 ];
 

@@ -11,9 +11,8 @@
 }
 
 .controls {
-    position: absolute;
+    position: relative;
     left: 75%;
-    margin-top: 10%;
 }
 
 button {

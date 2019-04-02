@@ -34,12 +34,6 @@
     /* box-shadow: 5px 5px 5px gray; */
 }
 
-li {
-    position: relative;
-    width: 80%;
-    margin: 10%;
-    box-shadow: 5px 5px 5px gray;
-}
 
 #adminLists {
     position: fixed;
