@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "title": "Chicken Biryani",
+        "restaurant-name": "Robb's Multicusine Kitchen",
+        "description": "The Chicken biryani that we provide will contain the actual flavour of Hyderabadi-Biryani",
+        "cost": 500,
+        "type": "nv"
+    },
+    {
+        "id": 2,
+        "title": "Veg Biryani",
+        "restaurant-name": "Robb's Multicusine Kitchen",
+        "description": "The Chicken biryani that we provide will contain the actual flavour of Hyderabadi-Biryani",
+        "cost": 200,
+        "type": "pv"
+    }
+
+]

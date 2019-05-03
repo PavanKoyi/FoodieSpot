@@ -1,3 +1,14 @@
-<p>
-  add-food-category works!
-</p>
+<div class="add-rest-form">
+  <h1>Adding new Restaurant {{ details.owner }}</h1>
+  <div class="rest-form"> 
+    Details to be filled for a new rest
+  </div>
+
+  <mat-dialog-content>
+    <p> Do you wanna Add Mr. {{ details.owner }} at {{ details.place }}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button>Cancel</button>
+    <button mat-raised-button>Save</button>
+  </mat-dialog-actions>
+</div>

@@ -13,6 +13,8 @@ import { LoginService } from './login/loginService.service';
 import {  HttpClientModule } from '@angular/common/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AuthenticationServiceService } from './login/authentication-service.service';
+import { DemoHeadComponent } from './head/demo-head/demo-head.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     FootComponent,
     LoginComponent,
     SignUpComponent,
-    HomeComponent
+    HomeComponent,
+    DemoHeadComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [LoginService],
+  providers: [ 
+    LoginService,
+    AuthenticationServiceService
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

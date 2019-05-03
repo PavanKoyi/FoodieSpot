@@ -7,6 +7,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AddFoodCategoryComponent } from './add-food-category/add-food-category.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserListComponent } from './user-list/user-list.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [DashboardComponent,
@@ -19,10 +20,12 @@ import { UserListComponent } from './user-list/user-list.component';
     CommonModule,
     AdminRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   exports: [
-    DashboardComponent
+    DashboardComponent,
+    AddRestaurantComponent
   ]
 })
 export class AdminModule { }

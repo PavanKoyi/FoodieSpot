@@ -21,9 +21,29 @@
           <button class="list-group-item list-group-item-action"> Cart </button>
         </div>
       </div>
-      <div class="col-4" id="searchBar">
+      <div class="col-3" id="searchBar">
             <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
       </div>
     </div>
   </div>
+  <div class="item-list">
+    <mat-grid-list cols="3" rowHeight="3:1.5">
+      <mat-grid-tile>
+        <p>hjfdg</p>
+        <img class="item-logo" src="./../../../assets/chickenBiryani.jpg" alt="CB"> 
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let item of items">
+          <img class="item-logo" src="{{item.imageUrl}}" alt="CB"> 
+        {{item.name}}
+      </mat-grid-tile>
+      <!-- <mat-grid-tile>3</mat-grid-tile>
+      <mat-grid-tile>4</mat-grid-tile>
+      <mat-grid-tile>5</mat-grid-tile>
+      <mat-grid-tile>6</mat-grid-tile>
+      <mat-grid-tile>7</mat-grid-tile>
+      <mat-grid-tile>8</mat-grid-tile>
+      <mat-grid-tile>9</mat-grid-tile> -->
+    </mat-grid-list>
+  </div>    
+
 </div>

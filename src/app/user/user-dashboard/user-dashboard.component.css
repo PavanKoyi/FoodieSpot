@@ -1,11 +1,11 @@
 #userDashboard {
-    position: absolute;
+    position:absolute ;
     background-color: transparent;
     top: 11%;
     left: 1vw;
     height: 86vh;
     width: 98vw;
-    box-shadow: 1px 1px 4px lightslategrey;
+    /* box-shadow: 1px 1px 4px lightslategrey; */
     border-radius: 10px;
 }
     
@@ -14,20 +14,36 @@
     }
 
 .menu {
-    position: relative;
-    background-color: aliceblue;
+    position: fixed;
     height: 10%;
     width: 100%;
-}
-
-.list-group-item {
-    position: relative;
-    margin: 3%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 #searchBar {
     position: absolute;
     right: 0%;
-    top: 20%;
+    top: 3%;
 }
 
+.item-list {
+    position: absolute;
+    top: 8vh;
+    /* height: 90vh; */
+    width: 75%;
+    /* background-color: black; */
+}
+
+mat-grid-tile {
+    background: lightblue;
+  }
+
+img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 30%;
+    width: 20%;
+}
